@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Just a thing]]></title>
-  <link href="http://JarrodHenry.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Ruby | Just a thing]]></title>
+  <link href="http://JarrodHenry.github.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://JarrodHenry.github.com/"/>
   <updated>2012-09-05T14:40:45-05:00</updated>
   <id>http://JarrodHenry.github.com/</id>
@@ -18,9 +18,9 @@
     <link href="http://JarrodHenry.github.com/blog/2012/09/05/testing-octopress/"/>
     <updated>2012-09-05T14:11:00-05:00</updated>
     <id>http://JarrodHenry.github.com/blog/2012/09/05/testing-octopress</id>
-    <content type="html"><![CDATA[<p>So I decided that I wanted to change how I do things.  And one of those changes includes a blogging engine that is a bit more static than dynamic, but that I could change and alter at my computer.  Thus.. I present, this thing.  Gotta hand it to @eevee, that&#8217;s the source of this wonderful toy.</p>
+    <content type="html"><![CDATA[<p>So I decided that I wanted to change how I do things.  And one of those changes includes a blogging engine that is a bit more static than dynamic, but that I could change and alter at my computer.  Thus.. I present, this thing.  Gotta hand it to @eevee, that's the source of this wonderful toy.</p>
 
-<p>Hopefully I can make it work with my own domain name, and then we&#8217;ll really be golden!</p>
+<p>Hopefully I can make it work with my own domain name, and then we'll really be golden!</p>
 ]]></content>
   </entry>
   
