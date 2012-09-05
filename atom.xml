@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Just a thing]]></title>
+  <link href="http://GraemeLion.github.com/atom.xml" rel="self"/>
+  <link href="http://GraemeLion.github.com/"/>
+  <updated>2012-09-05T14:28:13-05:00</updated>
+  <id>http://GraemeLion.github.com/</id>
+  <author>
+    <name><![CDATA[Graeme Lion]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Testing octopress]]></title>
+    <link href="http://GraemeLion.github.com/blog/2012/09/05/testing-octopress/"/>
+    <updated>2012-09-05T14:11:00-05:00</updated>
+    <id>http://GraemeLion.github.com/blog/2012/09/05/testing-octopress</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+</feed>
