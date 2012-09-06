@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: conference | Clever Name Here . . .]]></title>
+  <link href="http://JarrodHenry.github.com/blog/categories/conference/atom.xml" rel="self"/>
+  <link href="http://JarrodHenry.github.com/"/>
+  <updated>2012-09-06T10:24:37-05:00</updated>
+  <id>http://JarrodHenry.github.com/</id>
+  <author>
+    <name><![CDATA[Jarrod Henry]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[devLink 2012 , intro, and day 1]]></title>
+    <link href="http://JarrodHenry.github.com/blog/2012/09/06/devlink-2012/"/>
+    <updated>2012-09-06T09:08:00-05:00</updated>
+    <id>http://JarrodHenry.github.com/blog/2012/09/06/devlink-2012</id>
+    <content type="html"><![CDATA[<p>So I went to a developer conference in Chattanooga, Tennessee last week.  <a href="http://www.devlink.net">Devlink 2012</a> is a very nice low cost conference, tapping out at about $100-$150 for three days of panels, networking, and sponsor swag.  The sponsor swag was a bit low this year, however the networking was decent, and the classes were excellent.</p>
+
+<!-- more -->
+
+
+<p>As always, with a conference like this, you want to balance yourself between skills that might help you during work, skills that you might bring into work, and skills that you want to learn to sharpen the saw on your own professional career development.  To that end, I selected panels that I thought would be helpful to the unique aspects of my job.</p>
+
+<h1>The Classes</h1>
+
+<h2>Go: Google's New Language</h2>
+
+<p>The first panel I went to was presented by <a href="http://www.douglasstarnes.com">Douglas Starnes</a>.  Douglas is from memphis, and is a member of the python users group down there.  (I'd love to find a python users's group in the nashville area, as an aside.)   The panel was to discuss <a href="www.golang.org">Go</a>, which is a recent google creation.  The purpose of Go is to make it easy and simple to create software, which is about as worthless a description as you can get.   It's more important to learn what Go offers the developer.</p>
+
+<p>So, helloworld looks like this in Go:</p>
+
+<p>``` go Hello World Example
+package main</p>
+
+<p>import "fmt"</p>
+
+<p>func main() {</p>
+
+<pre><code>fmt.Println("Hello, world")
+</code></pre>
+
+<p>}
+```</p>
+
+<p>The interesting features of Go include type-safety via Duck Typing, which is something that I'm always a fan of, as well as multiple function outputs, and these clever things called 'goroutines.'</p>
+
+<p>Goroutines are behind the scenes concurrency threads, for lack of a better way of phrasing it.  You call a function with a goroutine via the 'go' keyword, and the function goes off and does it's thing apart from your work.  The system handles threading, the system handles concurrency, the system handles it all.   You can communicate with the goroutines via the "channel" keyword, as seen here in this example from the Go website.</p>
+
+<p>``` go Channel Example
+// Concurrent computation of pi.
+// See http://goo.gl/ZuTZM.
+//
+// This demonstrates Go's ability to handle
+// large numbers of concurrent processes.
+// It is an unreasonable way to calculate pi.
+package main</p>
+
+<p>import (</p>
+
+<pre><code>"fmt"
+"math"
+</code></pre>
+
+<p>)</p>
+
+<p>func main() {</p>
+
+<pre><code>fmt.Println(pi(5000))
+</code></pre>
+
+<p>}</p>
+
+<p>// pi launches n goroutines to compute an
+// approximation of pi.
+func pi(n int) float64 {</p>
+
+<pre><code>ch := make(chan float64)
+for k := 0; k &lt;= n; k++ {
+    go term(ch, float64(k))
+}
+f := 0.0
+for k := 0; k &lt;= n; k++ {
+    f += &lt;-ch
+}
+return f
+</code></pre>
+
+<p>}</p>
+
+<p>func term(ch chan float64, k float64) {</p>
+
+<pre><code>ch &lt;- 4 * math.Pow(-1, k) / (2*k + 1)
+</code></pre>
+
+<p>}
+```</p>
+
+<p>That's it.  You pass info back and forth, and the routine gets shuttled out to open cores as necessary. I can imagine on Google App Engine, this could be quite valuable.  Oh, yes, forgot to mention.  This is one of the languages that has an SDK for Google App Engine.</p>
+
+<p>All in all, Douglas was an excellent presenter, but I think his heart lives with mobile and python.  This was a good introduction to Go, though, and I encourage you to download the language.</p>
+
+<h2>A Sneak Peak of Visual Studio 11</h2>
+
+<p>I don't know what to say about this panel, which more or less seemed like a sales demo for Visual Studio and Microsoft.  The new <a href="http://www.microsoft.com/visualstudio/11/en-us/products/visualstudio">Visual Studio 11</a> dropped over the week, and contains a lot of innovative new features.</p>
+
+<p>Metro is now a big selling point to microsoft, but my company doesn't plan on using that.   The agile planning features, and sprint features should be helpful.  Intellitrace will let you capture debug information on-the-fly, so the "no reproduce" should be a thing of the past.  Theoretically.  If you use it.  And if you upgrade all your toys to this version.</p>
+
+<p>I won't say I'm non-plussed by it, it is an interesting product for Windows shops, and I do currently work in a windows shop, but unless you adopt Microsoft standards and processes fully, I feel that you'll still be adding on tools to get things done "your way."</p>
+
+<p>Maybe I'm just jealous that I'll probably not work on a product that uses this product.</p>
+
+<h2>Snakes in the Cloud - Writing Software for Google App Engine with Python </h2>
+
+<p>Douglas Starnes' second panel was this long titled panel about <a href="https://developers.google.com/appengine/">Google App Engine</a>.   GAE allows you to, using multiple languages, throw a service up into the "cloud" on google's own infrastructure.  They offer SDKs for Python, Java, and Go (see above) on the major platforms. The interesting thing about GAE is that it offers users ten versions of ten applications in a free tier.  Now, when you start doing scalable products, the cost can get higher and higher.  Let's take a look at the Hello World app from GAE's page.</p>
+
+<p><code>python helloworld.py
+print 'Content-Type: text/plain'
+print ''
+print 'Hello, world!'
+</code></p>
+
+<p>And the corresponding YAML (YAML Ain't Markup Language) file</p>
+
+<p>``` yaml app.yaml
+application: helloworld
+version: 1
+runtime: python
+api_version: 1</p>
+
+<p>handlers:
+- url: /.*
+  script: helloworld.py
+```</p>
+
+<p>You can test this by running dev_appserver.py, and it'll throw a development server on your box as well as an admin console to let you see behind the scenes.</p>
+
+<p>I came away from this class very interested in GAE, especially since <a href="flask.pocoo.org">Flask</a> can apparently run on GAE with the use of a template.  I can see it being useful for small scale one off projects, or those projects that might get bigger one day in the future.</p>
+
+<h2>You Say Tomato, I Say Pomodoro</h2>
+
+<p>When I mentioned to a friend that I used a Focus Hack, he replied, "Hey, I have one of those for my video card."   But it's true.  I do use a focus hack known as the <a href="http://www.pomodorotechnique.com/">Pomodoro Method</a>.  The basics of this technique are very simplistic:</p>
+
+<ul>
+<li>Get a timer</li>
+<li>Work 25 minutes without interruption on a discrete task</li>
+<li>Take a 5 minute break. That's a Pomodoro</li>
+<li>Every 4 Pomodoros (Poms), take a 15-30 minute break.</li>
+</ul>
+
+
+<p>The key reason I went to this panel was because, while I do use this method, I want to use it better.  There are days where I do not follow the technique, and it does take some getting used to.  There are also times when I don't have the discrete tasks ironed out, so I wanted to learn how to handle those things.</p>
+
+<p>I've not downloaded the official Pomodoro book (until just now), so I didn't learn a lot of the details.  One such detail is that you should draw out a time table, and keep a running task list.  The presenter of this panel kept it all on a piece of paper and used a pencil.  There is something to be said for simplicity.</p>
+
+<p>So, that ended the first day of devLink 2012.  My next post will have Day 2, and the last will have Day 3.</p>
+]]></content>
+  </entry>
+  
+</feed>
