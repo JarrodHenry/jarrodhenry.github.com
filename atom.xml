@@ -4,7 +4,7 @@
   <title><![CDATA[Clever Name Here . . .]]></title>
   <link href="http://JarrodHenry.github.com/atom.xml" rel="self"/>
   <link href="http://JarrodHenry.github.com/"/>
-  <updated>2012-09-06T10:24:37-05:00</updated>
+  <updated>2012-09-06T10:28:51-05:00</updated>
   <id>http://JarrodHenry.github.com/</id>
   <author>
     <name><![CDATA[Jarrod Henry]]></name>
@@ -29,7 +29,7 @@
 
 <h2>Go: Google&#8217;s New Language</h2>
 
-<p>The first panel I went to was presented by <a href="http://www.douglasstarnes.com">Douglas Starnes</a>.  Douglas is from memphis, and is a member of the python users group down there.  (I&#8217;d love to find a python users&#8217;s group in the nashville area, as an aside.)   The panel was to discuss <a href="www.golang.org">Go</a>, which is a recent google creation.  The purpose of Go is to make it easy and simple to create software, which is about as worthless a description as you can get.   It&#8217;s more important to learn what Go offers the developer.</p>
+<p>The first panel I went to was presented by <a href="http://www.douglasstarnes.com">Douglas Starnes</a>.  Douglas is from memphis, and is a member of the python users group down there.  (I&#8217;d love to find a python users&#8217;s group in the nashville area, as an aside.)   The panel was to discuss <a href="http://www.golang.org">Go</a>, which is a recent google creation.  The purpose of Go is to make it easy and simple to create software, which is about as worthless a description as you can get.   It&#8217;s more important to learn what Go offers the developer.</p>
 
 <p>So, helloworld looks like this in Go:</p>
 
