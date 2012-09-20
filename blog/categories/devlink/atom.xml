@@ -4,7 +4,7 @@
   <title><![CDATA[Category: devlink | Clever Name Here . . .]]></title>
   <link href="http://JarrodHenry.github.com/blog/categories/devlink/atom.xml" rel="self"/>
   <link href="http://JarrodHenry.github.com/"/>
-  <updated>2012-09-06T11:01:11-05:00</updated>
+  <updated>2012-09-20T14:09:24-05:00</updated>
   <id>http://JarrodHenry.github.com/</id>
   <author>
     <name><![CDATA[Jarrod Henry]]></name>
@@ -12,6 +12,44 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[devLink 2012: Day 2 and 3]]></title>
+    <link href="http://JarrodHenry.github.com/blog/2012/09/06/devlink-2012-day-2/"/>
+    <updated>2012-09-06T11:23:00-05:00</updated>
+    <id>http://JarrodHenry.github.com/blog/2012/09/06/devlink-2012-day-2</id>
+    <content type="html"><![CDATA[<p>Day two at Devlink started with a granola bar and a pepsi.  Since the hotel staff forgot to leave a take out / room service menu on my bed the previous day (and did forget THAT for the remainder of the convention), I was a bit rushed for time.</p>
+
+<!-- more -->
+
+
+<h2>Getting Started With Ruby on Rails </h2>
+
+<p>James Kovacs led the Ruby on Rails panel, in which he led us all through the creation and design of a very generic rails app.  This was one of those panels that taught me very cool things about ruby, and I'm looking forward to using Ruby more and more in my projects.</p>
+
+<h2>ASPNET MVC/Ruby on Rails</h2>
+
+<p>James Kovacs again led us on a comparison of ASPNET's version of Model View Controlled .NET and Ruby on Rails.  This one was interesting as well, though I zoned in and out of it as a lot of it was a repeat of the earlier panel.</p>
+
+<h2>Git Happens</h2>
+
+<p>Jessica Kerr, aka Jessitron on github, led this very visual panel about Git.  This panel covered the "extras" of git, where we got to see some more advanced roles that Git can take in your daily usage.  This panel taught me about github, and git-tfs, and gave me more usages for one of the world's best source control systems.</p>
+
+<h2>Testing The Untestable with Fakes </h2>
+
+<p>This panel, led by Gaines Kergosian, was him demonstrating multiple uses of the new Fakes objects available for visual studio.  I thought this panel was a bit dry, and it was really hard to follow what was going on.  I also thought this panel would be more about really "testing the untestable", when it was really just about how to do certain tests using Fakes.</p>
+
+<h1>Friday</h1>
+
+<h2>Ruby without Rails</h2>
+
+<p>James Kovacs gave me one last fix of ruby.. and this was for a class that was supposed to preceed the Rails version.  Not much to say about this, but a good general overview of Ruby.  I did pick up info on rvm.io as a way to distribute Ruby, and that was helpful if you're going to be using multiple versions of ruby.</p>
+
+<h2>Vim for Visual Studio Developer</h2>
+
+<p>Finally, I attended this panel, on my favorite text editor.  I thought thee would be more to it than this, but it was an interesting panel.  I learned about more vim shortcuts, and now know I need to get a cheatsheet, but was saddened to see that the only plugin is available for VS 2010 and later.  That's a shame, I'd love to have VIM on my personal work machines pulling weight :)</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[devLink 2012 , intro, and day 1]]></title>
